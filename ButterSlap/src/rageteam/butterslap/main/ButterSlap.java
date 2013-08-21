@@ -99,7 +99,7 @@ public class ButterSlap extends JavaPlugin{
 		arenas.setScore(arena);
 		
 		stats.stats();
-	    Score kills = obj.getScore(Bukkit.getOfflinePlayer(ChatColor.WHITE + "Kills:" + ChatColor.RED));
+	    Score kills = obj.getScore(Bukkit.getOfflinePlayer(ChatColor.DARK_RED + "Kills:" + ChatColor.RED));
 	    kills.setScore(kill);
 	
 	}
