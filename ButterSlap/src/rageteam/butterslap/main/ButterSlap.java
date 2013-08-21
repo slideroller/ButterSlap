@@ -34,7 +34,7 @@ public class ButterSlap extends JavaPlugin{
 	public int players = 0;
 	public int highScore = 0;
 	public int arena = 0;
-	public int doublejump = 1;
+	public int kill = 0;
 	
 	//Config
 	
@@ -89,7 +89,7 @@ public class ButterSlap extends JavaPlugin{
 			}
 		}, 0L, 20L);
 						
-		Score online = obj.getScore(Bukkit.getOfflinePlayer(ChatColor.DARK_AQUA + "Players:" + ChatColor.RED));
+		Score online = obj.getScore(Bukkit.getOfflinePlayer(ChatColor.DARK_AQUA + "Slappers:" + ChatColor.RED));
 		online.setScore(players);
 						
 		Score hScore = obj.getScore(Bukkit.getOfflinePlayer(ChatColor.YELLOW + "HighScore:" + ChatColor.RED));
@@ -99,8 +99,8 @@ public class ButterSlap extends JavaPlugin{
 		arenas.setScore(arena);
 		
 		stats.stats();
-	    Score doublejumps = obj.getScore(Bukkit.getOfflinePlayer(ChatColor.WHITE + "Double Jump:" + ChatColor.RED));
-	    doublejumps.setScore(doublejump);
+	    Score kills = obj.getScore(Bukkit.getOfflinePlayer(ChatColor.WHITE + "Kills:" + ChatColor.RED));
+	    kills.setScore(kill);
 	
 	}
 	
